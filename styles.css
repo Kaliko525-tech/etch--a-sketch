@@ -1,0 +1,15 @@
+.grid {
+    border: 1px solid black;
+    max-height: auto;
+    max-width: auto;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(32,auto);
+    grid-template-rows: repeat(32,auto);
+    min-height: 750px;
+    min-width: 750px;
+    max-height: 750px;
+    max-width: 750px;
+}
