@@ -1,4 +1,5 @@
 const container = document.getElementById('container')
+let gDiv = document.getElementsByClassName('grid')
 
 function createGrid(number) {
     let total = (number * number) 
@@ -7,11 +8,9 @@ function createGrid(number) {
         cDiv.classList.add('grid') 
         container.appendChild(cDiv)       
     }
-    
-    
 }
 
 createGrid(32)
 
-let gDiv = document.getElementsByClassName('grid')
+
 console.log(gDiv)
