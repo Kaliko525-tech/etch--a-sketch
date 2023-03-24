@@ -25,3 +25,4 @@ function changeGrid(){
 }
 
 console.log(gDiv)
+createGrid(16)
