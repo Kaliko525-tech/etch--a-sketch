@@ -1,13 +1,16 @@
 const container = document.getElementById('container')
 let gDiv = document.getElementsByClassName('grid')
 const btn = document.getElementById("new-grid")
-const regex = /^[1-9]$|^[1-9][0-9]$|^(100)$/
+const regex = /^[1-9]$|^[1-9][0-9]$|^(100)$/ //checks that the input is only a numerical value between 1-100
+
+createGrid(16)
+changeColor()
 
 btn.addEventListener('click', () => changeGrid())
 
 function createGrid(number) {
     let total = (number * number) 
-    for (i = 0; i < total ; i++ ) {
+    for (let i = 0; i < total ; i++ ) {
         let cDiv = document.createElement('div') 
         cDiv.classList.add('grid') 
         
@@ -23,12 +26,15 @@ function changeGrid(){
         container.replaceChildren();
     
         createGrid(input)
+        changeColor()
+
     } else {
      alert("invalid input")
     }
 }
 
-console.log(gDiv)
-createGrid(16)
-
-
+function changeColor() {
+    for (let i = 0; i<gDiv.length; i++){
+    gDiv[i].addEventListener('mouseover', () => gDiv[i].style.cssText = "background-color : blue")
+    }
+}

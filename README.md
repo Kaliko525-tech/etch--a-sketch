@@ -32,3 +32,9 @@ what I need to implement as well :
 
 
 got it working but not as intended, it is just doubling the divs or adding onto the already exsisting divs. so I need it to now remove any old divs first then add the new ones to create the new grid.
+
+25/03/23
+
+Today I will be implementing the 'hover' chang colour effect to complete this project. so far I know the event is called onmouseover, but wether to use a onmouseout event too is another question. 
+
+neither was the answer, I wanted just plain mouseover. now to implement it with all of them. got it to work yay!
