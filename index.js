@@ -40,9 +40,9 @@ function changeColor() {
 }
 
 function randomColor() {
-    let R = Math.floor(Math.random() * 255)
-    let B = Math.floor(Math.random() * 255)
-    let G = Math.floor(Math.random() * 255)
-    let RGB = `rgb(${R}, ${B}, ${G})`
+    let R = Math.floor(Math.random()* 255)
+    let G = Math.floor(Math.random()* 255)
+    let B = Math.floor(Math.random()* 255)
+    let RGB = `rgb(${R},${G},${B})`
     return RGB
 }
