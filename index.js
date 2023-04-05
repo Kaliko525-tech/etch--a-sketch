@@ -35,6 +35,14 @@ function changeGrid(){
 
 function changeColor() {
     for (let i = 0; i<gDiv.length; i++){
-    gDiv[i].addEventListener('mouseover', () => gDiv[i].style.cssText = "background-color : blue")
+    gDiv[i].addEventListener('mouseover', () => gDiv[i].style.cssText = `background-color : ${randomColor()}`)
     }
+}
+
+function randomColor() {
+    let R = Math.floor(Math.random() * 255)
+    let B = Math.floor(Math.random() * 255)
+    let G = Math.floor(Math.random() * 255)
+    let RGB = `rgb(${R}, ${B}, ${G})`
+    return RGB
 }
