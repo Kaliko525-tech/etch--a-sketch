@@ -38,3 +38,5 @@ got it working but not as intended, it is just doubling the divs or adding onto 
 Today I will be implementing the 'hover' chang colour effect to complete this project. so far I know the event is called onmouseover, but wether to use a onmouseout event too is another question. 
 
 neither was the answer, I wanted just plain mouseover. now to implement it with all of them. got it to work yay!
+
+can't figure out the gray scale thing, I will try again another time or just start this whole thing over from scartch later on. I have done everything else that is asked and I am happy with that. I am marking this project done for now.
